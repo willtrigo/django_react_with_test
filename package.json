@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development ./drwt/project/frontend/src/index.js --output ./drwt/project/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./drwt/project/frontend/src/index.js --output ./drwt/project/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
