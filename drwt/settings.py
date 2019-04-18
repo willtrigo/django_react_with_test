@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'drwt.leads',
     'rest_framework',
+    'drwt.frontend',
 ]
 
 MIDDLEWARE = [
