@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "flush": "pipenv run python ./drwt/manage.py flush --no-input",
+    "flush": "python manage.py flush --no-input",
     "e2e": "cypress open --project ./drwt/frontend/",
     "dev": "webpack --mode development ./drwt/frontend/src/index.js --output ./drwt/frontend/static/frontend/main.js",
     "build": "webpack --mode production ./drwt/frontend/src/index.js --output ./drwt/frontend/static/frontend/main.js"
