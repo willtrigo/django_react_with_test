@@ -7,8 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "webpack --mode development ./drwt/project/frontend/src/index.js --output ./drwt/project/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./drwt/project/frontend/src/index.js --output ./drwt/project/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development ./drwt/frontend/src/index.js --output ./drwt/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./drwt/frontend/src/index.js --output ./drwt/frontend/static/frontend/main.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "weak-key": "^1.0.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   }
