@@ -36,5 +36,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# testing
+# Unit test / coverage reports
 /coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
