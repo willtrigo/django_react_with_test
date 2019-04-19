@@ -117,3 +117,6 @@ both terminals the env needs to be turn on
 if the content don't show up, you might to use $ python manage.py collectstatic
 $ python manage.py runserver
 $ npm run e2e
+
+$ coverage run --source='.' manage.py test
+$ coverage html
