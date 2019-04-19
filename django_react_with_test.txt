@@ -3,7 +3,7 @@ https://www.valentinog.com/blog/tutorial-api-django-rest-react/
 $ mkvirtualenv -p /usr/bin/python3.7 django_react_todo
 $ cdvirtualenv
 $ git flow init
-$ touch .gitignore
+$ :> .gitignore
 $ nano .gitignore
   file.gitignore.config.txt
 $ git add .
