@@ -1,0 +1,119 @@
+https://www.valentinog.com/blog/tutorial-api-django-rest-react/
+
+$ mkvirtualenv -p /usr/bin/python3.7 django_react_todo
+$ cdvirtualenv
+$ git flow init
+$ touch .gitignore
+$ nano .gitignore
+  file.gitignore.config.txt
+$ git add .
+$ git commit -m "Add .gitignore"
+$ git checkout master
+
+github create the project
+$ git remote add origin https://github.com/willtrigo/django_react_with_test.git
+$ git merge develop
+$ git push -u origin master
+
+$ pip install django djangorestframework
+$ django-admin startproject drwt .
+$ cd drwt
+
+$ code .
+disable extentions
+$ pip install pylint
+
+$ pip install dj-database-url
+$ pip install dj-static
+$ pip install python-decouple
+create .env, the example is .env-sample
+create requirements.txt
+make change in the setting.py and wsgi.py
+git commit
+$ git push -u origin master
+
+$ cd drwt
+$ django-admin startapp leads
+add 'leads' in the settings.py
+create a model lead
+
+$ pip install coverage
+i couldn't use the coverage normally
+
+create leads.serializers.py, leads.urls.py
+make changes in leads.views.py, leads.models.py, settigns.py and urls.py
+
+create drwt/fixtures/leads.json
+make changes in leads.json
+$ python manager.py loaddata leads
+git commit
+
+$ cd drwt
+$ django-admin startapp frontend
+$ mkdir -p ./frontend/src/components
+$ mkdir -p ./frontend/{static,templates}/frontend
+
+$ cd ..
+$ npm init -y
+$ npm i webpack webpack-cli --save-dev
+
+make changes in .gitignore(add React's files)
+git commit
+make changes in package.json
+git commit
+
+$ npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties --save-dev
+$ npm i react react-dom prop-types --save-dev
+
+create .babelrc
+create .webpack.config.js
+git commit
+
+make changes in drwt/frontend/views.py
+add drwt/frontend/templates/frontend/index.html
+make changes in drwt/frontend/templates/frontend/index.html
+
+make changes in drwt/urls.py
+add drwt/frontend/urls.py
+make changes in settings.py
+
+add drwt/frontend/src/components/App.js
+make changes in drwt/frontend/src/components/App.js
+add drwt/frontend/src/components/DataProvider.js
+make changes in drwt/frontend/src/components/DataProvider.js
+add drwt/frontend/src/components/Table.js
+make changes in drwt/frontend/src/components/Table.js
+
+$ npm i weak-key --save-dev
+add drwt/frontend/src/index.js
+
+$ npm run dev
+
+$ python manage.py migrate && python manage.py loaddata leads
+$ python manage.py collectstatic
+
+$ npm i cypress --save-dev
+$ cd ./drwt/frontend
+$ ../../node_modules/.bin/cypress open
+make changes drwt/frontend/cypress.json
+make changes in package.json
+
+add drwt/frontend/cypress/integration/app_spec.js
+make changes drwt/frontend/cypress/integration/app_spec.js
+
+run cypress, you'll need two tab, one for python and other for cypress
+both terminals the env needs to be turn on
+if the content don't show up, you might to use $ python manage.py collectstatic
+$ python manage.py runserver
+$ npm run e2e
+
+add drwt/frontend/src/components/Form.js
+make changes in drwt/frontend/src/components/Form.js
+
+make changes in drwt/frontend/src/components/App.js
+make changes drwt/frontend/cypress/integration/app_spec.js
+
+both terminals the env needs to be turn on
+if the content don't show up, you might to use $ python manage.py collectstatic
+$ python manage.py runserver
+$ npm run e2e
